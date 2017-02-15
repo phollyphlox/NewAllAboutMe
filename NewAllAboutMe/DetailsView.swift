@@ -7,22 +7,17 @@
 //
 
 import UIKit
-protocol HobbyTableviewDelegate{
-    func detailsDidFinish(controller: DetailsView)
-}
+
 var hobbyName:String?
 
 class DetailsView: UIViewController {
-    
-    var delegate:HobbyTableviewDelegate? = nil
     
 
     @IBOutlet weak var detailsImage: UIImageView!
     @IBOutlet weak var detailsLabel: UILabel!
     
     override func viewDidLoad() {
-        
-
+         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         if hobbyName == "Knitting" {
@@ -56,15 +51,9 @@ class DetailsView: UIViewController {
             detailsImage.image = UIImage(named: "error.png")
         }
         
-        super.viewDidLoad()
     }
     
-    @IBAction func backButton(sender: UIBarButtonItem) {
-        if (delegate != nil) {
-            delegate!.detailsDidFinish(controller: self)
-            
-        }
-    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

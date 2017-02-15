@@ -18,6 +18,7 @@ class CountriesTableView: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -53,7 +54,11 @@ class CountriesTableView: UITableViewController {
         return cell
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
+        
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

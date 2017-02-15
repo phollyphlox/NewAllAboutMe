@@ -9,12 +9,14 @@
 import UIKit
 import MapKit
 
+//locations array must be global to prevent it from being recreated every time the view is loaded.
+var locations:[MKPointAnnotation] = []
 
 class mapVC: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var myMap: MKMapView!
     
-    var locations:[MKPointAnnotation] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,16 +85,18 @@ class mapVC: UIViewController, MKMapViewDelegate {
             newAnnotation.title = textField.text     //the text the user entered in the text box
             self.myMap.addAnnotation(newAnnotation)//adds a pin to map where the user long pressed
             countries.append((newAnnotation.title)!)    //adds the title of the new location to the countries list
-            self.locations.append(newAnnotation)          //adds the new annotation to the list of locations
+            locations.append(newAnnotation)          //adds the new annotation to the list of locations
+            
+            
         }
         
         alert.addAction(addLocation) //adds the newly created button to the pop up box
         
         self.present(alert, animated: true, completion:nil) //presents the pop up box
-        
+
     }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
