@@ -14,6 +14,21 @@
 		2E8AD6961E53579500053037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6941E53579500053037 /* LaunchScreen.storyboard */; };
 		2E8AD6A11E53579600053037 /* NewAllAboutMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6A01E53579600053037 /* NewAllAboutMeTests.swift */; };
 		2E8AD6AC1E53579600053037 /* NewAllAboutMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6AB1E53579600053037 /* NewAllAboutMeUITests.swift */; };
+		2E8AD6BB1E535BB800053037 /* CountriesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6B91E535BB800053037 /* CountriesTableView.swift */; };
+		2E8AD6BC1E535BB800053037 /* CountriesTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6BA1E535BB800053037 /* CountriesTableView.xib */; };
+		2E8AD6BF1E536AFE00053037 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E8AD6BE1E536AFE00053037 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		2E8AD6C21E536EFA00053037 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6C01E536EFA00053037 /* mapVC.swift */; };
+		2E8AD6C31E536EFA00053037 /* mapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6C11E536EFA00053037 /* mapVC.xib */; };
+		2E8AD6C61E537A0900053037 /* HobbyTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6C41E537A0900053037 /* HobbyTableview.swift */; };
+		2E8AD6C71E537A0900053037 /* HobbyTableview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6C51E537A0900053037 /* HobbyTableview.xib */; };
+		2E8AD6C91E53866C00053037 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6C81E53866C00053037 /* DetailsView.swift */; };
+		2E8AD6CB1E53904200053037 /* hobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8AD6CA1E53904200053037 /* hobby.swift */; };
+		2E8AD6CD1E53A5AE00053037 /* Crochet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6CC1E53A5AE00053037 /* Crochet.jpg */; };
+		2E8AD6CF1E53A68000053037 /* knitting.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6CE1E53A68000053037 /* knitting.jpg */; };
+		2E8AD6D11E53A68A00053037 /* reading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D01E53A68A00053037 /* reading.jpg */; };
+		2E8AD6D31E53A69400053037 /* swimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D21E53A69400053037 /* swimming.jpg */; };
+		2E8AD6D51E53A69D00053037 /* hiking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D41E53A69D00053037 /* hiking.jpg */; };
+		2E8AD6D71E53A6A700053037 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D61E53A6A700053037 /* error.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +62,21 @@
 		2E8AD6A71E53579600053037 /* NewAllAboutMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewAllAboutMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8AD6AB1E53579600053037 /* NewAllAboutMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAllAboutMeUITests.swift; sourceTree = "<group>"; };
 		2E8AD6AD1E53579600053037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E8AD6B91E535BB800053037 /* CountriesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableView.swift; sourceTree = "<group>"; };
+		2E8AD6BA1E535BB800053037 /* CountriesTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountriesTableView.xib; sourceTree = "<group>"; };
+		2E8AD6BE1E536AFE00053037 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2E8AD6C01E536EFA00053037 /* mapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
+		2E8AD6C11E536EFA00053037 /* mapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mapVC.xib; sourceTree = "<group>"; };
+		2E8AD6C41E537A0900053037 /* HobbyTableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbyTableview.swift; sourceTree = "<group>"; };
+		2E8AD6C51E537A0900053037 /* HobbyTableview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HobbyTableview.xib; sourceTree = "<group>"; };
+		2E8AD6C81E53866C00053037 /* DetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		2E8AD6CA1E53904200053037 /* hobby.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hobby.swift; sourceTree = "<group>"; };
+		2E8AD6CC1E53A5AE00053037 /* Crochet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Crochet.jpg; sourceTree = "<group>"; };
+		2E8AD6CE1E53A68000053037 /* knitting.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = knitting.jpg; sourceTree = "<group>"; };
+		2E8AD6D01E53A68A00053037 /* reading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reading.jpg; sourceTree = "<group>"; };
+		2E8AD6D21E53A69400053037 /* swimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swimming.jpg; sourceTree = "<group>"; };
+		2E8AD6D41E53A69D00053037 /* hiking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiking.jpg; sourceTree = "<group>"; };
+		2E8AD6D61E53A6A700053037 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8AD6BF1E536AFE00053037 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +108,13 @@
 		2E8AD67F1E53579500053037 = {
 			isa = PBXGroup;
 			children = (
+				2E8AD6C01E536EFA00053037 /* mapVC.swift */,
+				2E8AD6C11E536EFA00053037 /* mapVC.xib */,
 				2E8AD68A1E53579500053037 /* NewAllAboutMe */,
 				2E8AD69F1E53579600053037 /* NewAllAboutMeTests */,
 				2E8AD6AA1E53579600053037 /* NewAllAboutMeUITests */,
 				2E8AD6891E53579500053037 /* Products */,
+				2E8AD6BD1E536AFE00053037 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +134,19 @@
 				2E8AD68B1E53579500053037 /* AppDelegate.swift */,
 				2E8AD68D1E53579500053037 /* ViewController.swift */,
 				2E8AD68F1E53579500053037 /* Main.storyboard */,
+				2E8AD6C81E53866C00053037 /* DetailsView.swift */,
+				2E8AD6CA1E53904200053037 /* hobby.swift */,
+				2E8AD6C41E537A0900053037 /* HobbyTableview.swift */,
+				2E8AD6C51E537A0900053037 /* HobbyTableview.xib */,
+				2E8AD6B91E535BB800053037 /* CountriesTableView.swift */,
+				2E8AD6BA1E535BB800053037 /* CountriesTableView.xib */,
 				2E8AD6921E53579500053037 /* Assets.xcassets */,
+				2E8AD6CC1E53A5AE00053037 /* Crochet.jpg */,
+				2E8AD6CE1E53A68000053037 /* knitting.jpg */,
+				2E8AD6D01E53A68A00053037 /* reading.jpg */,
+				2E8AD6D21E53A69400053037 /* swimming.jpg */,
+				2E8AD6D41E53A69D00053037 /* hiking.jpg */,
+				2E8AD6D61E53A6A700053037 /* error.png */,
 				2E8AD6941E53579500053037 /* LaunchScreen.storyboard */,
 				2E8AD6971E53579500053037 /* Info.plist */,
 			);
@@ -123,6 +169,14 @@
 				2E8AD6AD1E53579600053037 /* Info.plist */,
 			);
 			path = NewAllAboutMeUITests;
+			sourceTree = "<group>";
+		};
+		2E8AD6BD1E536AFE00053037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E8AD6BE1E536AFE00053037 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +248,11 @@
 					2E8AD6871E53579500053037 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					2E8AD69B1E53579500053037 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -232,8 +291,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8AD6C71E537A0900053037 /* HobbyTableview.xib in Resources */,
+				2E8AD6D11E53A68A00053037 /* reading.jpg in Resources */,
+				2E8AD6D71E53A6A700053037 /* error.png in Resources */,
 				2E8AD6961E53579500053037 /* LaunchScreen.storyboard in Resources */,
+				2E8AD6C31E536EFA00053037 /* mapVC.xib in Resources */,
+				2E8AD6CF1E53A68000053037 /* knitting.jpg in Resources */,
+				2E8AD6CD1E53A5AE00053037 /* Crochet.jpg in Resources */,
 				2E8AD6931E53579500053037 /* Assets.xcassets in Resources */,
+				2E8AD6D51E53A69D00053037 /* hiking.jpg in Resources */,
+				2E8AD6BC1E535BB800053037 /* CountriesTableView.xib in Resources */,
+				2E8AD6D31E53A69400053037 /* swimming.jpg in Resources */,
 				2E8AD6911E53579500053037 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8AD6CB1E53904200053037 /* hobby.swift in Sources */,
+				2E8AD6BB1E535BB800053037 /* CountriesTableView.swift in Sources */,
+				2E8AD6C61E537A0900053037 /* HobbyTableview.swift in Sources */,
+				2E8AD6C21E536EFA00053037 /* mapVC.swift in Sources */,
 				2E8AD68E1E53579500053037 /* ViewController.swift in Sources */,
 				2E8AD68C1E53579500053037 /* AppDelegate.swift in Sources */,
+				2E8AD6C91E53866C00053037 /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
