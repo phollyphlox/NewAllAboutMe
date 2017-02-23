@@ -29,6 +29,7 @@
 		2E8AD6D31E53A69400053037 /* swimming.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D21E53A69400053037 /* swimming.jpg */; };
 		2E8AD6D51E53A69D00053037 /* hiking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D41E53A69D00053037 /* hiking.jpg */; };
 		2E8AD6D71E53A6A700053037 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AD6D61E53A6A700053037 /* error.png */; };
+		84F4A24C1E5F8C110012FB2F /* noImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F4A24B1E5F8C110012FB2F /* noImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		2E8AD6D21E53A69400053037 /* swimming.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swimming.jpg; sourceTree = "<group>"; };
 		2E8AD6D41E53A69D00053037 /* hiking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiking.jpg; sourceTree = "<group>"; };
 		2E8AD6D61E53A6A700053037 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
+		84F4A24B1E5F8C110012FB2F /* noImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				2E8AD6D21E53A69400053037 /* swimming.jpg */,
 				2E8AD6D41E53A69D00053037 /* hiking.jpg */,
 				2E8AD6D61E53A6A700053037 /* error.png */,
+				84F4A24B1E5F8C110012FB2F /* noImage.png */,
 				2E8AD6941E53579500053037 /* LaunchScreen.storyboard */,
 				2E8AD6971E53579500053037 /* Info.plist */,
 			);
@@ -301,6 +304,7 @@
 				2E8AD6931E53579500053037 /* Assets.xcassets in Resources */,
 				2E8AD6D51E53A69D00053037 /* hiking.jpg in Resources */,
 				2E8AD6BC1E535BB800053037 /* CountriesTableView.xib in Resources */,
+				84F4A24C1E5F8C110012FB2F /* noImage.png in Resources */,
 				2E8AD6D31E53A69400053037 /* swimming.jpg in Resources */,
 				2E8AD6911E53579500053037 /* Main.storyboard in Resources */,
 			);
@@ -484,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewAllAboutMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.tstc.Phyllis.NewAllAboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,7 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewAllAboutMe/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.tstc.Phyllis.NewAllAboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";

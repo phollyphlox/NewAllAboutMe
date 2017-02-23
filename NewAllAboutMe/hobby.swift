@@ -12,5 +12,5 @@ import UIKit
 struct hobby{
     var name = ""
     var description = ""
-    var imageName = ""
+    var imageName:UIImage?
 }

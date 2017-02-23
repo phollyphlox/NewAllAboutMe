@@ -8,11 +8,10 @@
 
 import UIKit
 
-var hobbyName:String?
+var hobbyRow:Int?
 
-class DetailsView: UIViewController {
+class DetailsView: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-
     @IBOutlet weak var detailsImage: UIImageView!
     @IBOutlet weak var detailsLabel: UILabel!
     
@@ -20,34 +19,15 @@ class DetailsView: UIViewController {
          super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if hobbyName == "Knitting" {
-            self.title = "Knitting"
-            detailsLabel.text = "Knitting is a textile art that uses 2 pointed needles to form knots in yarn to create fabric."
-            detailsImage.image = UIImage(named: "knitting.jpg")
-        }
-        else if hobbyName == "Crochet" {
-            self.title = "Crochet"
-            detailsLabel.text = "Crocheting is a textile art that uses a hook to form knots in yarn to create fabric."
-            detailsImage.image = UIImage(named: "crochet.jpg")
-        }
-        else if hobbyName == "Reading" {
-            self.title = "Reading"
-            detailsLabel.text = "Reading is relaxing and fun."
-            detailsImage.image = UIImage(named: "reading.jpg")
-        }
-        else if hobbyName == "Hiking" {
-            self.title = "Hiking"
-            detailsLabel.text = "Hiking is fun and it is good exercise."
-            detailsImage.image = UIImage(named: "hiking.jpg")
-        }
-        else if hobbyName == "Swimming" {
-            self.title = "Swimming"
-            detailsLabel.text = "Swimming is fun and it is good exercise"
-            detailsImage.image = UIImage(named: "swimming.jpg")
+        let hobbyName = hobbies[hobbyRow!].name
+        if hobbyName != "" {
+            self.title = hobbyName
+            detailsLabel.text = hobbies[hobbyRow!].description
+            detailsImage.image = hobbies[hobbyRow!].imageName
         }
         else {
             self.title = "Error"
-            detailsLabel.text = "There was a problem. Please return to the previous menu and try selecting an item again."
+            detailsLabel.text = "There was a problem. Please return to the previous menu and try selecting a hobby again."
             detailsImage.image = UIImage(named: "error.png")
         }
         
@@ -60,7 +40,32 @@ class DetailsView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnChoseImage(_ sender: AnyObject) {
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.savedPhotosAlbum) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+            imagePicker.mediaTypes = [kCIAttributeTypeImage as String]
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        
+    }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let mediaType = info[UIImagePickerControllerMediaType] as! NSString
+        self.dismiss(animated: true, completion: nil)
+        if (mediaType.isEqual(to: kCIAttributeTypeImage as String)) {
+            let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+            detailsImage.image = image
+            hobbies[hobbyRow!].imageName = image
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation
