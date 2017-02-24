@@ -46,7 +46,7 @@ class DetailsView: UIViewController, UIImagePickerControllerDelegate, UINavigati
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
-            imagePicker.mediaTypes = [kCIAttributeTypeImage as String]
+            //imagePicker.mediaTypes = [kCIAttributeTypeImage as String]
             imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
         }
@@ -54,13 +54,13 @@ class DetailsView: UIViewController, UIImagePickerControllerDelegate, UINavigati
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let mediaType = info[UIImagePickerControllerMediaType] as! NSString
+        //let mediaType = info[UIImagePickerControllerMediaType] as! NSString
         self.dismiss(animated: true, completion: nil)
-        if (mediaType.isEqual(to: kCIAttributeTypeImage as String)) {
+        //if (mediaType.isEqual(to: kCIAttributeTypeImage as String)) {
             let image = info[UIImagePickerControllerOriginalImage] as! UIImage
             detailsImage.image = image
             hobbies[hobbyRow!].imageName = image
-        }
+        //}
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
